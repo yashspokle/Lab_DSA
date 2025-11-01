@@ -10,7 +10,7 @@ class Stack {
         if (tos == max - 1) {
             System.out.println("Stack is overflowed");
             return;
-        } 
+        }
         tos++;
         arr[tos] = data;
         System.out.println("Pushed = " + data);
@@ -30,11 +30,6 @@ class Stack {
             System.out.println("Stack is empty");
             return;
         }
-        System.out.print("Stack Elements: ");
-        for (int i = 0; i <= tos; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
     }
 
     public void peep() {
@@ -43,7 +38,6 @@ class Stack {
 
     public static void main(String[] args) {
         Stack stack = new Stack();
-
         stack.push(11);
         stack.push(22);
         stack.push(33);
@@ -57,4 +51,5 @@ class Stack {
         stack.pop();
         stack.peep();
     }
+
 }

@@ -14,7 +14,7 @@ public class Stack_Scanner {
         System.out.print("Enter the maximum size of the stack: ");
         int maxSize = sc.nextInt();
         int[] stack = new int[maxSize];
-        int top = -1; /
+        int top = -1; // Top of Stack index
 
         while (true) {
             System.out.println("\nChoose an operation:");
